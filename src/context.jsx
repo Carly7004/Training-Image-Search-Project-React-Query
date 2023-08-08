@@ -8,7 +8,6 @@ const getInitialDarkMode = () => {
     `(prefers-color-scheme: dark)`
   ).matches;
   const storedDarkMode = localStorage.getItem("darkMode") === "true";
-  console.log(prefersDarkMode);
   return storedDarkMode || prefersDarkMode;
 };
 
